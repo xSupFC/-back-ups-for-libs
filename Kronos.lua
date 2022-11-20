@@ -52,7 +52,7 @@ end
 function library:Window(options)
     local TitleUI = options.Title or "Kronos Lib"
     local Accent = options.Accent or Color3.fromRGB(69, 69, 207)
-    local Logo = options.Logo or '3610245066'
+    local Logo = options.Logo
     local Toggle_Key = options.ToggleKey or Enum.KeyCode.LeftBracket
 
     local Kronos = Instance.new("ScreenGui")
@@ -111,7 +111,7 @@ function library:Window(options)
     Main_Logo.BackgroundTransparency = 1.000
     Main_Logo.Position = UDim2.new(0.242857158, 0, 0.0225000009, 0)
     Main_Logo.Size = UDim2.new(0, 35, 0, 35)
-    Main_Logo.Image = "rbxassetid://" .. tostring(Logo)
+    Main_Logo.Image = tostring(Logo)
     Main_Logo.ImageColor3 = Accent
     Main_Logo.ScaleType = Enum.ScaleType.Fit
 
